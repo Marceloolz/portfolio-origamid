@@ -16,7 +16,7 @@
       height: 320px;
       background-color: #c3c3c3;
       overflow: hidden;
-      clip-path: polygon(0 40px, 1600px 0px, 1600px 80%, 0 65%);
+      clip-path: polygon(0 13%, 100% 0, 100% 85%, 0% 100%);
       img {
         width: 100%;
         height: 100%;
@@ -41,7 +41,7 @@
           position: absolute;
           top: 8px;
           left: -24px;
-          transform: rotate(-32deg);
+          transform: rotate(-17deg);
           z-index: 2;
           .Title_Detail_Item {
             width: 88px;
