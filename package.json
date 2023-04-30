@@ -1,0 +1,31 @@
+{
+    "name": "Marceloolz",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "dependencies": {
+        "bower": "^1.8.2",
+        "gulp-clean-css": "^3.9.4",
+        "gulp-cli": "^2.2.0",
+        "gulp-util": "^3.0.8",
+        "node": "^10.16.0",
+        "node-sass": "^5.0.0",
+        "sass": "^1.32.8",
+        "typed.js": "^2.0.8"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-minify": "^1.0.0",
+        "gulp-minify-css": "^1.2.4",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^3.1.0",
+        "gulp-watch": "^5.0.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
