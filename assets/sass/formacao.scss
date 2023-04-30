@@ -1,0 +1,133 @@
+.SiteFormacao {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: $C13;
+  padding: 80px 0px;
+  .SiteFormacao_Container {
+    max-width: 1140px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 64px;
+    .SiteFormacao_Container_BigTitle {
+      color: $Black;
+      font-size: 144px;
+      line-height: 144px;
+      word-break: break-all;
+      text-transform: uppercase;
+      font-weight: 700;
+      width: 320px;
+      flex-shrink: 0;
+    }
+    .SiteFormacao_Container_RealContent {
+      .Container_RealContent_Text {
+        font-size: 24px;
+        line-height: 32px;
+        color: $C6;
+        font-weight: 400;
+        b {
+          font-weight: 500;
+          color: #fff;
+        }
+      }
+      .Container_RealContent_Formacao {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 32px;
+        margin-top: 48px;
+        .RealContent_Formacao_Item {
+          border: solid 2px $Black;
+          background-color: #090909;
+          padding: 20px;
+          border-radius: 6px;
+          min-height: 140px;
+          display: flex;
+          flex-direction: column;
+          .Formacao_Item_Label {
+            color: $C6;
+            font-size: 14px;
+            line-height: 22px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+          }
+          .Formacao_Item_Title {
+            color: #fff;
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 600;
+            margin-bottom: 14px;
+            position: relative;
+            &:before {
+              width: 5px;
+              height: 50%;
+              background-image: linear-gradient(45deg, $GreenOne, $GreenTwo);
+              content: " ";
+              display: block;
+              position: absolute;
+              left: -26px;
+              top: 0px;
+            }
+          }
+          .Formacao_Item_Instituicao {
+            color: $C6;
+            margin-top: auto;
+          }
+        }
+      }
+      .Container_RealContent_MiniCursos {
+        margin-top: 48px;
+        @extend %Hover;
+        .RealContent_MiniCursos_Item {
+          display: flex;
+          flex-direction: row;
+          grid-gap: 16px;
+          justify-content: space-between;
+          margin-bottom: 6px;
+          .MiniCursos_Item_Title {
+            font-size: 16px;
+            line-height: 24px;
+            color: $White;
+            .Item_Title_Level {
+              font-weight: 400;
+              color: $C7;
+            }
+          }
+          .MiniCursos_Item_CargaHoraria {
+            color: $C7;
+          }
+        }
+        .RealContent_MiniCursos_TitleSection {
+          text-transform: uppercase;
+          color: $C7;
+          font-weight: 700;
+          font-size: 14px;
+          padding-bottom: 24px;
+          position: relative;
+          @extend %Hover;
+          .MiniCursos_TitleSection_Icon {
+            position: absolute;
+            left: -28px;
+            color: $GreenOne;
+            font-size: 16px;
+            @extend %Hover;
+          }
+          &:hover {
+            color: $GreenOne;
+            .MiniCursos_TitleSection_Icon {
+              color: $GreenTwo;
+            }
+          }
+        }
+        &:hover {
+          .RealContent_MiniCursos_TitleSection {
+            color: $GreenOne;
+            .MiniCursos_TitleSection_Icon {
+              color: $GreenOne;
+            }
+          }
+        }
+      }
+    }
+  }
+}

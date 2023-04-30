@@ -1,0 +1,123 @@
+.SiteExperiencia {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+  @extend %Hover;
+  .SiteExperiencia_Container {
+    max-width: 1140px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 64px;
+    .SiteExperiencia_Container_BigTitle {
+      @extend %Hover;
+      color: $GreenTwo;
+      font-size: 144px;
+      line-height: 144px;
+      word-break: break-all;
+      text-transform: uppercase;
+      font-weight: 700;
+      width: 320px;
+      flex-shrink: 0;
+    }
+    .SiteExperiencia_Container_RealContent {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      .Container_RealContent_Text {
+        text-align: right;
+        font-size: 24px;
+        line-height: 32px;
+        max-width: 540px;
+      }
+      .Container_RealContent_Jobs {
+        margin-top: 64px;
+        .RealContent_Jobs_Item {
+          display: flex;
+          flex-direction: row;
+          grid-gap: 32px;
+          margin-bottom: 24px;
+          .Jobs_Item_Time {
+            color: $C10;
+          }
+          .Jobs_Item_Carreer {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 24px;
+            background-color: $C1;
+            border: 2px solid $C2;
+            padding: 20px;
+            border-radius: 6px;
+            position: relative;
+            border: 4px solid #0000;
+            @extend %Hover;
+            &:before {
+              width: 4px;
+              height: 12%;
+              background-image: linear-gradient(45deg, $GreenOne, $GreenTwo);
+              content: " ";
+              display: block;
+              position: absolute;
+              left: -5px;
+              top: 16px;
+              opacity: 1;
+            }
+            .Item_Carreer_SkillsSide {
+              display: flex;
+              flex-direction: column;
+              grid-gap: 12px;
+              .Carreer_SkillsSide_Title {
+                color: $Black;
+                font-size: 18px;
+                line-height: 22px;
+                font-weight: 600;
+              }
+              .Carreer_SkillsSide_ContainerSkills {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                grid-gap: 12px;
+                .SkillsSide_ContainerSkills_Item {
+                  background-color: #fff;
+                  color: $C13;
+                  font-size: 14px;
+                  line-height: 22px;
+                  font-weight: 500;
+                  padding: 2px 6px;
+                  border-radius: 4px;
+                  @extend %Hover;
+                  &:hover {
+                    color: $White;
+                    background-color: $GreenOne;
+                  }
+                }
+              }
+            }
+            .Item_Carreer_Infos {
+              display: flex;
+              flex-direction: column;
+              grid-gap: 8px;
+              .Carreer_Infos_Title {
+                color: $Black;
+                font-size: 18px;
+                line-height: 22px;
+                font-weight: 600;
+              }
+              .Carreer_Infos_Text {
+                color: $C10;
+                font-size: 16px;
+                line-height: 24px;
+              }
+            }
+            &:hover {
+              border: 4px solid $GreenOne;
+              &:before {
+                opacity: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
