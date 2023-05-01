@@ -1,0 +1,62 @@
+.SiteFooter {
+  background-color: $Black;
+  padding: 64px 0px 40px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-left: 6px solid $GreenOne;
+  .SiteFooter_Container {
+    max-width: 90%;
+    width: 1140px;
+    .SiteFooter_Container_Mark {
+      .Container_Mark_Detail {
+        width: 120px;
+        height: 20px;
+        transform: rotate(-16deg);
+        position: relative;
+        top: -80px;
+        left: 0px;
+        &:nth-child(1) {
+          background-color: $GreenOne;
+        }
+        &:nth-child(2) {
+          background-color: $GreenTwo;
+        }
+      }
+    }
+    .SiteFooter_Container_Content {
+      display: grid;
+      grid-gap: 40px;
+      grid-template-columns: 1fr 1fr;
+      .Container_Content_Text {
+        color: $C4;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 200;
+      }
+      .Container_Content_Contatos {
+        .Content_Contatos_Item {
+          color: $White;
+          font-size: 18px;
+          line-height: 26px;
+          @extend %Hover;
+          a {
+            color: inherit;
+            text-decoration: none;
+          }
+          &:hover {
+            color: $GreenOne;
+          }
+        }
+      }
+    }
+    .SiteFooter_Container_Copyright {
+      color: $C7;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      margin-top: 40px;
+    }
+  }
+}

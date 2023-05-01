@@ -3,6 +3,7 @@
   justify-content: center;
   min-height: calc(100vh - 94px);
   align-items: center;
+  border-left: 6px solid $GreenTwo;
   .SiteSuperBanner_Container {
     width: 1140px;
     max-width: 90%;
@@ -37,6 +38,9 @@
           display: block;
           z-index: 3;
           position: relative;
+          .Title_Row_Cursor {
+            animation: animaCursorSuperbanner 1.5s infinite;
+          }
         }
         .Content_Title_Detail {
           position: absolute;
@@ -69,5 +73,23 @@
   }
   100% {
     filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes animaCursorSuperbanner {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }

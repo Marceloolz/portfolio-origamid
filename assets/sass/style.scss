@@ -3,9 +3,37 @@
 @import "superbanner.scss";
 @import "experiencia.scss";
 @import "formacao.scss";
+@import "footer.scss";
 // @import "components.scss";
 body {
   margin: inherit;
   padding: inherit;
   font-family: "Fira Sans", sans-serif;
+}
+
+.SiteDivisor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  .SiteDivisor_Item {
+    width: 100%;
+    height: 1px;
+    background-color: $C3;
+  }
+  .SiteDivisor_XMP {
+    margin: inherit;
+    padding: 0 24px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: unset;
+    font-size: 24px;
+    color: $C3;
+    position: absolute;
+    z-index: 2;
+    background-color: $White;
+  }
 }

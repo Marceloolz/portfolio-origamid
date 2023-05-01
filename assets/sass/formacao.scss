@@ -4,6 +4,7 @@
   justify-content: center;
   background-color: $C13;
   padding: 80px 0px;
+  border-left: 6px solid $GreenTwo;
   .SiteFormacao_Container {
     max-width: 1140px;
     width: 90%;
@@ -11,7 +12,7 @@
     flex-direction: row;
     grid-gap: 64px;
     .SiteFormacao_Container_BigTitle {
-      color: $Black;
+      color: $C9;
       font-size: 144px;
       line-height: 144px;
       word-break: break-all;
