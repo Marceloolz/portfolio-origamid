@@ -5,6 +5,7 @@
   background-color: $C13;
   padding: 80px 0px;
   border-left: 6px solid $GreenTwo;
+  display: none !important;
   .SiteFormacao_Container {
     max-width: 1140px;
     width: 90%;
@@ -29,7 +30,7 @@
         font-weight: 400;
         b {
           font-weight: 500;
-          color: #fff;
+          color: $White;
         }
       }
       .Container_RealContent_Formacao {
@@ -53,7 +54,7 @@
             margin-bottom: 12px;
           }
           .Formacao_Item_Title {
-            color: #fff;
+            color: $White;
             font-size: 18px;
             line-height: 22px;
             font-weight: 600;

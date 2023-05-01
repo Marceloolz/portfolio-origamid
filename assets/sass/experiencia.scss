@@ -4,6 +4,7 @@
   padding: 80px;
   border-left: 6px solid $GreenOne;
   @extend %Hover;
+  display: none !important;
   .SiteExperiencia_Container {
     max-width: 1140px;
     width: 90%;
@@ -78,7 +79,7 @@
                 flex-wrap: wrap;
                 grid-gap: 12px;
                 .SkillsSide_ContainerSkills_Item {
-                  background-color: #fff;
+                  background-color: $White;
                   color: $C13;
                   font-size: 14px;
                   line-height: 22px;

@@ -4,6 +4,7 @@
   min-height: calc(100vh - 94px);
   align-items: center;
   border-left: 6px solid $GreenTwo;
+  display: none !important;
   .SiteSuperBanner_Container {
     width: 1140px;
     max-width: 90%;
