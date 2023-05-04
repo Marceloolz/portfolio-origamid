@@ -5,7 +5,7 @@
   background-color: $C13;
   padding: 80px 0px;
   border-left: 6px solid $GreenTwo;
-  display: none !important;
+  // display: none !important;
   .SiteFormacao_Container {
     max-width: 1140px;
     width: 90%;
@@ -46,6 +46,7 @@
           min-height: 140px;
           display: flex;
           flex-direction: column;
+          @extend %Hover;
           .Formacao_Item_Label {
             color: $C6;
             font-size: 14px;
@@ -74,6 +75,9 @@
           .Formacao_Item_Instituicao {
             color: $C6;
             margin-top: auto;
+          }
+          &:hover {
+            border: solid 2px $GreenTwo;
           }
         }
       }
