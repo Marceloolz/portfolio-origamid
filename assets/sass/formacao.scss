@@ -5,7 +5,7 @@
   background-color: $C13;
   padding: 80px 0px;
   border-left: 6px solid $GreenTwo;
-  // display: none !important;
+  display: none;
   .SiteFormacao_Container {
     max-width: 1140px;
     width: 90%;
@@ -21,6 +21,10 @@
       font-weight: 700;
       width: 320px;
       flex-shrink: 0;
+      @extend %Hover;
+      &:hover{
+        color: $GreenTwo;
+      }
     }
     .SiteFormacao_Container_RealContent {
       .Container_RealContent_Text {

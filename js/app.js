@@ -17,3 +17,13 @@ $(window).on('load', function() {
   $('.SeletorDayNight').click(function(){
     $('body').toggleClass( '__Is-Day');
   });
+
+  $('.Container_Menu_Icon').click(function(){
+    $('.SiteHeader_Container_Menu').toggleClass('__is-active');
+  });
+  
+  $('.Menu_Lista_Item').click(function(){
+    $('.SiteHeader_Container_Menu').removeClass('__is-active');
+  });
+
+  Menu_Lista_Item

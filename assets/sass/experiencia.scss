@@ -4,7 +4,7 @@
   padding: 80px;
   border-left: 6px solid $GreenOne;
   @extend %Hover;
-  // display: none !important;
+  display: none !important;
   .SiteExperiencia_Container {
     max-width: 1140px;
     width: 90%;
@@ -21,6 +21,9 @@
       font-weight: 700;
       width: 320px;
       flex-shrink: 0;
+      &:hover{
+        color: $GreenOne;
+      }
     }
     .SiteExperiencia_Container_RealContent {
       display: flex;
