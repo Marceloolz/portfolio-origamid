@@ -91,6 +91,23 @@
   }
 }
 
+@media screen and (max-width: 560px){
+  .SiteSuperBanner {
+    .SiteSuperBanner_Container{
+      grid-gap: 0px;
+      .SiteSuperBanner_Container_ImageWolf{
+        width: 100%;
+      }
+      .SiteSuperBanner_Container_Content{
+        .Container_Content_Title{
+          font-size: 48px;
+          line-height: 56px;
+        }
+      }
+    }
+  }
+}
+
 @keyframes animaPictureFrames {
   0%{
     transform: translateX(-20px);

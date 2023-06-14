@@ -147,6 +147,33 @@
   }
 }
 
+@media screen and (max-width: 780px){
+  .SiteExperiencia {
+    .SiteExperiencia_Container{
+      .SiteExperiencia_Container_BigTitle{
+        word-break: break-all;
+      }
+      .SiteExperiencia_Container_RealContent{
+        .Container_RealContent_Jobs{
+          width: 100%;
+          .RealContent_Jobs_Item{
+            grid-gap: 16px;
+            flex-direction: column;
+            margin-bottom: 64px;
+            &:last-child{
+              margin-bottom: inherit;
+            }
+            .Jobs_Item_Carreer{
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 640px){
   .SiteExperiencia{
     .SiteExperiencia_Container{

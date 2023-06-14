@@ -91,7 +91,7 @@
         &.__is-active{
           .Container_Menu_Icon{
             position: relative;
-            z-index: 3;
+            z-index: 11;
             .Menu_Icon_Bar{
               position: absolute;
               &:nth-child(1){
@@ -124,8 +124,9 @@
             min-height: 100vh;
             margin: 0px;
             padding: 0px;
-            z-index: 2;
+            z-index: 10;
           }
+          
         }
       }
     }
