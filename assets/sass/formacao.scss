@@ -86,6 +86,7 @@
       }
       .Container_RealContent_MiniCursos {
         margin-top: 48px;
+        margin-left: 29px;
         @extend %Hover;
         .RealContent_MiniCursos_Item {
           display: flex;
@@ -136,6 +137,68 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1140px){
+  .SiteFormacao{
+    .SiteFormacao_Container{
+      flex-direction: column;
+      .SiteFormacao_Container_BigTitle{
+            width: 100%;
+            word-break: keep-all;
+            font-size: 80px;
+            line-height: 88px;
+            text-align: center;
+      }
+      .SiteFormacao_Container_RealContent{
+        .Container_RealContent_Text{
+          text-align: center;
+        }
+        .Container_RealContent_MiniCursos{
+          .RealContent_MiniCursos_Item{
+            justify-content: inherit;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px){
+  .SiteFormacao{
+    .SiteFormacao_Container{
+      .SiteFormacao_Container_RealContent{
+        .Container_RealContent_Formacao{
+          grid-gap: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px){
+  .SiteFormacao{
+    .SiteFormacao_Container{
+      .SiteFormacao_Container_RealContent{
+        .Container_RealContent_Formacao{
+          grid-template-columns: 1fr;
+          grid-gap: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+  .SiteFormacao{
+    .SiteFormacao_Container{
+      grid-gap: 8px;
+      .SiteFormacao_Container_BigTitle{
+        font-size: 56px;
       }
     }
   }

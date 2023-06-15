@@ -90,7 +90,7 @@
         }
         &.__is-active{
           .Container_Menu_Icon{
-            position: relative;
+            position: fixed;
             z-index: 11;
             .Menu_Icon_Bar{
               position: absolute;
@@ -119,16 +119,34 @@
             position: fixed;
             top: 0;
             left: 0;
-            background-color: $White;
+            background-image: linear-gradient(90deg,#000,#000000e3);
             width: 100%;
             min-height: 100vh;
             margin: 0px;
             padding: 0px;
             z-index: 10;
+            grid-gap: 64px;
+            opacity: 1;
+            animation: 0.4s 1 AnimacaoMenuMobile;
+            li{
+              color: $White;
+              font-size: 40px;
+              font-weight: 200;
+              text-transform: uppercase;
+            }
           }
           
         }
       }
     }
+  }
+}
+
+@keyframes AnimacaoMenuMobile{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1.0;
   }
 }

@@ -6,7 +6,6 @@
   align-items: center;
   justify-content: center;
   border-left: 6px solid $GreenOne;
-  display: none !important;
   .SiteFooter_Container {
     max-width: 90%;
     width: 1140px;
@@ -58,6 +57,17 @@
       line-height: 20px;
       font-weight: 400;
       margin-top: 40px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 840px){
+  .SiteFooter{
+    .SiteFooter_Container{
+      .SiteFooter_Container_Content{
+        grid-template-columns: 1fr;
+      }
     }
   }
 }
