@@ -4,6 +4,12 @@
   justify-content: center;
   padding: 16px 0px;
   box-shadow: -1px 13px 20px #00000005;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
   .SiteHeader_Container {
     display: flex;
     flex-direction: row;

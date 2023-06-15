@@ -2,7 +2,32 @@
   display: flex;
   justify-content: center;
   min-height: calc(100vh - 94px);
+  padding: 94px 0px;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+  .SiteSuperBanner_BackgroundDetail{
+    width: 500px;
+    height: 500px;
+    background-color: #ccf235;
+    position: absolute;
+    bottom: 40%;
+    left: -25%;
+    transform: rotate(335deg);
+    z-index: 1;
+  }
+  .SiteSuperBanner_BackgroundDetail2{
+    width: 500px;
+    height: 500px;
+    background-color: #70da1c;
+    position: absolute;
+    bottom: 40%;
+    right: -25%;
+    transform: rotate(335deg);
+    z-index: 1;
+    border-radius: 1000px;
+    animation: 1s infinite animaDetail-one;
+  }
   .SiteSuperBanner_Container {
     width: 1140px;
     max-width: 90%;
@@ -19,6 +44,7 @@
       clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
       animation: animaPictureFrames 15s infinite;  
       position: relative;
+      z-index: 2;
       &:after{
         content: ' ';
         position: absolute;
@@ -77,6 +103,12 @@
 
 @media screen and (max-width: 1024px){
   .SiteSuperBanner{
+    .SiteSuperBanner_BackgroundDetail{
+      display: none;
+    }
+    .SiteSuperBanner_BackgroundDetail2{
+      display: none;
+    }
     .SiteSuperBanner_Container{
       flex-direction: column-reverse;
       .SiteSuperBanner_Container_Content{
