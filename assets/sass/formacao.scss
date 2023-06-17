@@ -5,6 +5,8 @@
   background-color: $C13;
   padding: 80px 0px;
   border-left: 6px solid $GreenTwo;
+  position: relative;
+  z-index: 3;
   .SiteFormacao_Container {
     max-width: 1140px;
     width: 90%;
@@ -57,6 +59,29 @@
             text-transform: uppercase;
             margin-bottom: 12px;
           }
+          .Formacao_Item_CertificadoLink{
+            a{
+              text-decoration: none;
+              color: inherit;
+              button{
+                cursor: pointer;
+                background-color: $C12;
+                padding: 8px 8px;
+                border-radius: 2px;
+                margin: inherit;
+                border: none;
+                text-transform: uppercase;
+                color: $White;
+                font-size: 10px;
+                font-weight: 700;
+                @extend %Hover;
+                outline: none;
+                &:hover{
+                  background-color: $GreenOne;
+                }
+              }
+            }
+          }
           .Formacao_Item_Title {
             color: $White;
             font-size: 18px;
@@ -88,6 +113,7 @@
         margin-top: 48px;
         margin-left: 29px;
         @extend %Hover;
+        display: none;
         .RealContent_MiniCursos_Item {
           display: flex;
           flex-direction: row;

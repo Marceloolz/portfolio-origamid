@@ -36,6 +36,8 @@
     justify-content: space-between;
     align-items: center;
     grid-gap: 80px;
+    position: fixed;
+    z-index: 2;
     .SiteSuperBanner_Container_ImageWolf {
       width: 350px;
       height: 350px;

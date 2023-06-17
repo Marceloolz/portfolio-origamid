@@ -4,6 +4,9 @@
   padding: 80px;
   border-left: 6px solid $GreenOne;
   @extend %Hover;
+  position: relative;
+  z-index: 3;
+  background-color: $White;
   .SiteExperiencia_Container {
     max-width: 1140px;
     width: 90%;
@@ -30,17 +33,30 @@
       align-items: flex-end;
       .Container_RealContent_Text {
         text-align: right;
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 20px;
+        line-height: 28px;
         max-width: 540px;
+        a{
+          color: inherit;
+          text-decoration: none;
+          outline: none;
+          font-weight: 700;
+          background-color: $C3;
+          color: $Black;
+          @extend %Hover;
+          &:hover{
+            background-color: inherit;
+            color: $GreenOne;
+          }
+        }
       }
       .Container_RealContent_Jobs {
         margin-top: 64px;
         .RealContent_Jobs_Item {
           display: flex;
-          flex-direction: row;
-          grid-gap: 32px;
-          margin-bottom: 24px;
+          flex-direction: column;
+          grid-gap: 8px;
+          margin-bottom: 40px;
           .Jobs_Item_Time {
             color: $C10;
           }

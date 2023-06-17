@@ -23,6 +23,10 @@
       font-weight: 700;
       text-transform: uppercase;
       color: $GrayOne;
+      a{
+        color: inherit;
+        text-decoration: none;
+      }
       .Container_Brand_LastName {
         display: block;
         font-weight: 400;

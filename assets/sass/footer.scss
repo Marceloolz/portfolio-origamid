@@ -6,6 +6,8 @@
   align-items: center;
   justify-content: center;
   border-left: 6px solid $GreenOne;
+  position: relative;
+  z-index: 3;
   .SiteFooter_Container {
     max-width: 90%;
     width: 1140px;
